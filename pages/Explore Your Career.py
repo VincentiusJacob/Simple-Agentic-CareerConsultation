@@ -1,4 +1,3 @@
-# Explore Your Career.py
 import streamlit as st
 from agent_core import setup_qdrant_client, setup_chat_models, create_langfuse_handler, get_supervisor_executor
 from qdrant_client.http.models import Filter, FieldCondition, MatchValue, PayloadSchemaType
@@ -266,43 +265,9 @@ with tab3:
                 import traceback
                 st.code(traceback.format_exc())
 
-st.markdown("### 💡 Pro Tips for Using Career Explorer")
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    with st.container():
-        st.markdown("#### 🎯 Deep Dive")
-        st.write(
-            "Use this to understand a single career field in depth. "
-            "Perfect for when you're seriously considering a specific path."
-        )
-
-with col2:
-    with st.container():
-        st.markdown("#### ⚖️ Compare")
-        st.write(
-            "Torn between two careers? Use comparison to see which aligns "
-            "better with your goals and skills."
-        )
-
-with col3:
-    with st.container():
-        st.markdown("#### 🔥 Trends")
-        st.write(
-            "Stay ahead of the curve by understanding what skills are hot "
-            "across industries right now."
-        )
-
 st.markdown("---")
 
 st.info(
-    "💡 **Note:** All analyses use AI to process real resume data from our database. "
+    "**Note:** All analyses use AI to process real resume data from our database. "
     "Results may vary based on the sample size and data quality."
-)
-st.markdown("#### 📊 Data updated regularly • 🤖 Powered by Advanced AI • 🔒 Your searches are private")
-
-st.markdown(
-    "Questions? Check our [FAQ](#) or "
-    "[Contact Support](#)"
 )

@@ -1,4 +1,3 @@
-# pages/2_📄_Resume_Analyzer.py
 import streamlit as st
 import os
 from langchain_core.messages import HumanMessage, ToolMessage
