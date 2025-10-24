@@ -1,7 +1,6 @@
 import pandas as pd
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
-# --- TAMBAH IMPORT INI ---
 from qdrant_client.http.models import Distance, VectorParams, PayloadSchemaType
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
